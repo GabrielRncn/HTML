@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../_img/FundoLogin2.jpg);
+    background-size: cover;
+}
+
+.form-box {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    backdrop-filter: blur(15px);
+    border: solid 1px whitesmoke;
+    background-color: transparent;
+    box-shadow: 1px 1px 50px -10px blueviolet;
+}
+
+h2 {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    font-family: poppinsbold;
+}
+
+.inputbox {
+    position: relative;
+    margin: 20px 0;
+    width: 310px;
+    border-bottom: 2px solid white;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1em;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -5px
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-box-senha {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    border-bottom: 1px white dashed;
+}
+
+.text-box-senha a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.text-box-senha a:hover {
+    text-decoration: underline;
+}
+
+.text-box-conta {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+
+}
+
+.text-box-conta p {
+    font-size: 14px;
+}
+
+.text-box-conta a {
+    font-size: 14px;
+    /* color: rgb(133, 52, 187); */
+    color: white;
+    text-decoration: none;
+}
+
+.text-box-conta a:hover {
+    text-decoration: underline;
+}
+
+button {
+    transition: 0.1s;
+    margin-top: 40px;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    border: solid white 1px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 16px;
+}
+
+button:hover {
+    transition: 0.3s;
+    color: rgb(62, 218, 213);
+    background-color: blueviolet;
+}
